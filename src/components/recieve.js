@@ -2,8 +2,9 @@ import React from "react";
 import CurrencyInput from "react-currency-input-field";
 
 function Recieve() {
-    const amount = 0.1;
-    const fee = 0.2;
+    const amount = 10;
+    const fee = (amount*0.0349)+0.49;
+    const result = amount + fee.toFixed(2) * 1;
 
   return (
     <div className="calc">
@@ -26,7 +27,7 @@ function Recieve() {
         </div>
         <div className="grid-right">
        <p className="result">
-        To Recieve <span className="blue"> ${amount}</span>, Sender would have to pay <span className="red"> ${fee}</span>
+        To Recieve <span className="blue"> ${amount}</span>, Sender would have to pay <span className="red"> ${result}</span>
         </p>
         </div>
       </div>

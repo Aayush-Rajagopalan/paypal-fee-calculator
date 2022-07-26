@@ -28,7 +28,7 @@ const Tabs = () => {
         <div className='container'>
             <div className='tabs'>
                 {tabs.map((tab, i) =>
-                    <button class="button" key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
+                    <button class="tab-button" key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
                 )}
             </div>
             <div className='content'>

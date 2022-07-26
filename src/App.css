@@ -64,7 +64,7 @@ h1,h2{
   color: aqua;
 }
 
-.button{
+.tab-button{
   background-color:#1d2135 ;
   margin: 20px;
   height: 80px;
@@ -80,7 +80,7 @@ h1,h2{
 
 
 
-.button:disabled{
+.tab-button:disabled{
   background-color: #576ee0;
   color: #fff;
   border:3px #576ee0 solid;
@@ -129,7 +129,7 @@ font-size: 20px;
 
 .result{
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-size: 2.3rem;
   margin: 20px;
 }
 
@@ -140,3 +140,41 @@ font-size: 20px;
 .red{
   color: red;
 }
+
+
+/*--MEDIA QUERIES--*/
+
+/*Small Devices*/
+
+@media screen and (max-width: 350px) {
+  
+
+}
+
+/*--Medium Devices--*/
+
+@media screen and (max-width:568px){
+  .grid{
+    grid-template-columns: auto;
+   }
+   .tab-button{
+    width: 40vh;
+   }
+   .content{padding-top: 10px;}
+   .calc{
+    width: auto;
+    height: 70vh;
+   }
+   
+}
+
+@media screen and (max-width: 768px){
+ .calc{
+  width: auto;
+  height: 70vh;
+ }
+ 
+}
+
+
+
