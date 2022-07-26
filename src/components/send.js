@@ -2,11 +2,14 @@ import React from "react";
 import CurrencyInput from "react-currency-input-field";
 
 function Send() {
-    const amount = 10;
-    const fee = (amount*0.0349)+0.49;
-    const result = amount - fee.toFixed(2) * 1;
-
-   
+  const value = 0;
+  const result = 0;
+     function process (amount) {
+     const fee = (amount*0.0349)+0.49;
+     const result = Number(amount) - Number(fee).toFixed(2) * 1; 
+     console.log(result);
+     }
+ 
 
   return (
     <div className="calc">
@@ -22,13 +25,13 @@ function Send() {
   placeholder="Please enter a number"
   defaultValue={0}
   decimalsLimit={2}
-  onValueChange={(value, name) => console.log(value, name)}
+  onValueChange={(value, name) =>  { process(value, name) }}
 />
             <button className="calculate-button">Calculate</button>
         </div>
         <div className="grid-right">
        <p className="result">
-        If <span className="blue"> ${amount}</span> is Sent, Reciever would Recieve <span className="red"> ${result}</span>
+        If <span className="blue"> ${ value || 0}</span> is Sent, Reciever would Recieve <span className="red"> ${result || 0}</span>
         </p>
         </div>
       </div>
