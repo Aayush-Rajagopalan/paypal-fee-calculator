@@ -1,6 +1,9 @@
 import React from "react";
+import CurrencyInput from "react-currency-input-field";
 
 function Recieve() {
+    const amount = 0.1;
+    const fee = 0.2;
 
   return (
     <div className="calc">
@@ -8,11 +11,23 @@ function Recieve() {
       <h2>To Recieve</h2>
       <div className="grid">
         <div className="grid-left">
-            <input type="currency"  placeholder="Amount"  className="amount" /> <br />
+        <CurrencyInput
+                intlConfig={{ locale: 'en-US', currency: 'USD' }}
+  id="input-example"
+  className="amount"
+  name="input-name"
+  placeholder="Please enter a number"
+  defaultValue={0}
+  step="0.01"
+  decimalsLimit={2}
+  onValueChange={(value, name) => console.log(value, name)}
+/>
             <button className="calculate-button">Calculate</button>
         </div>
         <div className="grid-right">
-        To Recieve [number], they must pay [fee]
+       <p className="result">
+        To Recieve <span className="blue"> ${amount}</span>, Sender would have to pay <span className="red"> ${fee}</span>
+        </p>
         </div>
       </div>
     </div>

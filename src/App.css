@@ -93,7 +93,7 @@ h1,h2{
 .grid{
   height: 43vh;
   display: grid;
-  border:1px solid red;
+  padding-top: 50px;
   grid-template-columns: 50% 50%;
 }
 
@@ -112,5 +112,31 @@ h1,h2{
 }
 .amount:placeholder{
   color: hsl(230, 8%, 45%) ;
+}
 
+.calculate-button{
+  background-color: #1d2135;
+  margin: 20px;
+  width: 50%;
+  
+  padding: 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+font-size: 20px;
+  border: #1d2135;
+  border-radius: 10px;
+}
+
+.result{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.blue{
+  color: blue;
+}
+
+.red{
+  color: red;
 }
