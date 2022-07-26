@@ -11,12 +11,12 @@ const Tabs = () => {
         {
             id: 1,
             tabTitle: 'To Recieve',
-            content: <Send/>
+            content: <Recieve/>
         },
         {
             id: 2,
             tabTitle: 'To Send',
-            content: <Recieve/>
+            content: <Send/>
         }
     ];
 

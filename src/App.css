@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 html{
   background-color: #161927;
-  color: #fff
+  color: #fff;
 }
 .App {
   text-align: center;
@@ -85,4 +88,29 @@ h1,h2{
 
 .content{
   padding-top: 40px;
+}
+
+.grid{
+  height: 43vh;
+  display: grid;
+  border:1px solid red;
+  grid-template-columns: 50% 50%;
+}
+
+.amount{
+    width: 80%;
+    background-color: #1d2135;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin: 20px;
+    border:none;
+    outline: none;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.amount:placeholder{
+  color: hsl(230, 8%, 45%) ;
+
 }
