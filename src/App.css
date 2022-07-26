@@ -50,7 +50,7 @@ h1,h2{
 .calc{
   background-color: #576ee0;
   border-radius: 20px;
-  height: 60vh;
+  height: 65vh;
   padding-top: 10px;
   width: 100vh;
 }
@@ -93,10 +93,11 @@ h1,h2{
 .grid{
   height: 43vh;
   display: grid;
-  padding-top: 50px;
   grid-template-columns: 50% 50%;
 }
-
+.grid-left{
+  padding-top: 120px;
+}
 .amount{
     width: 80%;
     background-color: #1d2135;
@@ -128,17 +129,20 @@ font-size: 20px;
 }
 
 .result{
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.3rem;
-  margin: 20px;
+  font-family: 'Mont', sans-serif;
+  font-size: 2rem;
 }
 
 .blue{
   color: blue;
+  font-size: 70px;
+  font-weight: 900;
 }
 
 .red{
   color: red;
+  font-size: 70px;
+  font-weight: 900;
 }
 
 
