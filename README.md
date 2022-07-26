@@ -4,4 +4,4 @@ This project is still in development
 
 Made with react
 
-in collaboration with ahmed baari
+In collaboration with Ahmed Baari
