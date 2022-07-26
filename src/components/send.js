@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import CurrencyInput from "react-currency-input-field";
 
 function Send() {
-  const value = 0;
-  const result = 0;
-     function process (amount) {
-     const fee = (amount*0.0349)+0.49;
-     const result = Number(amount) - Number(fee).toFixed(2) * 1; 
-     console.log(result);
-     }
+  const [value, set_value] = useState(1) 
+  const [result, set_result] = useState(1.52) 
+
+    const updateState = (e) => {
+      if (e==0 || e==null) {
+        set_value(1);
+        set_result(1.52);
+      } else {
+        let final = Number(e) + Number((e*0.0349)+0.49).toFixed(2) * 1;
+      set_value(e);
+      set_result(final);
+      console.log(final);
+      }
+  }
+
  
 
   return (
     <div className="calc">
-      <h1>Paypal Fee Calculator</h1>
-      <h2>To Send</h2>
+      <h1 className="title">Paypal Fee Calculator</h1>
+      <h2 className="subtitle">To Send</h2>
       <div className="grid">
         <div className="grid-left">
         <CurrencyInput
@@ -23,15 +31,13 @@ function Send() {
   className="amount"
   name="input-name"
   placeholder="Please enter a number"
-  defaultValue={0}
   decimalsLimit={2}
-  onValueChange={(value, name) =>  { process(value, name) }}
+  onValueChange={(e) => {updateState(e)}}
 />
-            <button className="calculate-button">Calculate</button>
         </div>
         <div className="grid-right">
        <p className="result">
-        If <span className="blue"> ${ value || 0}</span> is Sent, Reciever would Recieve <span className="red"> ${result || 0}</span>
+        You pay <br></br> <span className="blue"> ${ value }</span><br></br> <br></br>Reciever gets<br></br><span className="red"> ${result || 0}</span>
         </p>
         </div>
       </div>
