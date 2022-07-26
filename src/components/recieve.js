@@ -8,7 +8,7 @@ function Recieve() {
   const [result, set_result] = useState(1.52) 
 
     const updateState = (e) => {
-      if (e==0 || e==null) {
+      if (e===0 || e==null) {
         set_value(1);
         set_result(1.52);
       } else {
