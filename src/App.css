@@ -67,7 +67,8 @@ h1,h2{
   background-color:#1d2135 ;
   margin: 20px;
   height: 80px;
-  width: 170px;
+  width: 350px;
+  margin-top:40px ;
   color: #fff;
   border: 3px #1d2135 solid;
   border-radius: 10px;
@@ -156,33 +157,45 @@ font-size: 20px;
 
 /*Small Devices*/
 
-@media screen and (max-width: 350px) {
-  
+@media screen and (max-width: 380px) {
 
 }
 
 /*--Medium Devices--*/
 
-@media screen and (max-width:568px){
+@media screen and (max-width:608px){
   .grid{
     grid-template-columns: auto;
    }
    .tab-button{
-    width: 40vh;
+    width: 18vh;
    }
    .content{padding-top: 10px;}
    .calc{
     width: auto;
     height: 70vh;
    }
+   .grid-left{
+    padding-top: 10px;
+   }
+   .calc{
+    width: auto;
+    height: 80vh;
+   }
    
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 868px){
  .calc{
   width: auto;
-  height: 70vh;
+  height: 75vh;
  }
+
+ .grid{
+  grid-template-columns: auto;
+ 
+ }
+ 
  
 }
 
