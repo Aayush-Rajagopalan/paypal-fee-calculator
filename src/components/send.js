@@ -10,7 +10,7 @@ function Send() {
         set_value(1);
         set_result(1.52);
       } else {
-        let final = Number(e) + Number((e*0.0349)+0.49).toFixed(2) * 1;
+        let final = Number(e) - Number((e*0.0349)+0.49).toFixed(2) * 1;
       set_value(e);
       set_result(final);
       console.log(final);

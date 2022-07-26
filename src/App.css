@@ -134,13 +134,13 @@ font-size: 20px;
 }
 
 .blue{
-  color: hsl(0, 3%, 74%);
+  color: blue;
   font-size: 70px;
   font-weight: 700;
 }
 
 .red{
-  color: rgb(238, 255, 0);
+  color: red;
   font-size: 70px;
   font-weight: 700;
 }
