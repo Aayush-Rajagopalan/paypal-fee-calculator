@@ -1,13 +1,11 @@
 import './App.css';
+import Tabs from './components/tabs';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Tabs/>
     </div>
   );
 }
