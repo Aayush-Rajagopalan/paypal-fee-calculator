@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/paypal-fee-calculator/static/css/main.dcea37da.css",
+    "main.js": "/paypal-fee-calculator/static/js/main.2d776762.js",
+    "index.html": "/paypal-fee-calculator/index.html",
+    "main.dcea37da.css.map": "/paypal-fee-calculator/static/css/main.dcea37da.css.map",
+    "main.2d776762.js.map": "/paypal-fee-calculator/static/js/main.2d776762.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcea37da.css",
+    "static/js/main.2d776762.js"
+  ]
+}
